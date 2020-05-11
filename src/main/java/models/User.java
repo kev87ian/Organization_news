@@ -7,9 +7,10 @@ public class User {
     private String title;
     private String userName;
     private String position;
+    private String userRole;
     private int departmentId;
 
-    public User(String title,String name, String position, String userRole, int departmentId) {
+    public User(String title,String userName, String position, String userRole, int departmentId) {
         this.title = title;
         this.userName = userRole;
         this.position = position;
