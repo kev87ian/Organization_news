@@ -27,16 +27,19 @@ public class App {
         Sql2oUsers usersDao;
         Sql2oNews newsDao;
         Connection con;
-        Gson gson = new Gson();
+        Gson gson;
+        gson = new Gson();
 
 
-        Sql2o sql2o = DB.sql2o;
+        String connectionString = "jdbc:postgresql://ec2-52-87-135-240.compute-1.amazonaws.com:5432/d3sdho8ddmto6a"; //!
+        Sql2o sql2o = new Sql2o(connectionString, "ohlvhpjepxptuv", "46a1c76b534693759c7d10399418293ba738184be80a5377acbed0f37d1920fd"); //!
+
 
         departmentDao = new Sql2oDepartments(sql2o);
         usersDao = new Sql2oUsers(sql2o);
         newsDao = new Sql2oNews(sql2o);
 
-        get(("/"), (request, response) -> {
+        get(("/news"), (request, response) -> {
             response.redirect("/news");
             return null;
         });

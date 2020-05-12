@@ -1,0 +1,11 @@
+models/User.class
+models/Departments.class
+dao/Sql2oNews.class
+DB.class
+App.class
+dao/Sql2oUsers.class
+dao/NewsDao.class
+dao/DepartmentsDao.class
+dao/Sql2oDepartments.class
+models/News.class
+dao/UsersDao.class
