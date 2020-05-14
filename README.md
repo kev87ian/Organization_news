@@ -45,6 +45,11 @@ Launch your terminal, and type in psql. Then type the following
    - CREATE TABLE news(id serial PRIMARY KEY, title VARCHAR, newsContent VARCHAR, writtenBy VARCHAR, departmentId int);
    - CREATE TABLE departments_users(id serial PRIMARY KEY, departmentId int, usersId int);
    - CREATE TABLE users(id serial PRIMARY KEY, title VARCHAR, userName VARCHAR, position VARCHAR, userRole VARCHAR, departmentId int);
+   
+### API Documentation
+- Get all users 
+   (http://localhost4567/new)
+ 
 ### Technologies Used
 * Java
 * Spark
@@ -52,6 +57,8 @@ Launch your terminal, and type in psql. Then type the following
 * Intellij 
 * Postgres  
  
+ ### Known Bugs
+ - Some of the API endpoints don't work.
 ### Contacts
 Reach me via kelvinian87@gmail.com incase of any issues.
 
