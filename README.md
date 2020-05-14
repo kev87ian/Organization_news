@@ -49,7 +49,18 @@ Launch your terminal, and type in psql. Then type the following
 ### API Documentation
 - Get all users 
    (http://localhost4567/new)
+
+- Add new user
+   (http://localhost4567/new/users)
+   
+ - Get departments
+   (http://localhost4567/departments)
  
+ -Add new department
+ (http://localhost4567/departments/new)
+
+   
+ - 
 ### Technologies Used
 * Java
 * Spark
